@@ -1,4 +1,4 @@
 ---
 title: Blog Posts
-description: The blog of Jane and John Doe
+description: My blog posts - every topic I can think of
 ---

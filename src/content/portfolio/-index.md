@@ -3,18 +3,6 @@ title: Projects, Hobbies and Interests
 description: My projects
 
 projects:
-  - title: "XANDAR"
-    technologies:
-      - "SysML"
-      - "C"
-      - "Rust"
-      - "XNG Hypervisor"
-    website: "https://xandar-project.eu/"
-    timeline: "01/2021 - 12/2023"
-    content:
-      - "XANDAR (_X-by-Construction Design framework for Engineering Autonomous & Distributed Real-time Embedded Software Systems_) is an EU project comprised by industry and academic partners within the automotive, aviation and software tooling domains. The project delivered a mature software toolchain, enabling fast and robust prototyping from capturing requirements to systems modelling all the way up to code generation and Verification and Validation (V&V) on the target hardware platform. By integrating advanced safety patterns, runtime monitoring and modern code generation into the toolchain, multiple attributes (safety, security, reliability, etc.) are fulfilled, realizing the X-by-Construction paradigm. Particular focus is laid on non-deterministic AI/ML artifacts, which are primarily used for autonomy functions within the automotive and aviation domain."
-      - "Within the project, my role was to develop an avionic demonstrator to further mature and test the toolchain. The demonstrator contains an instance of an ADS-B based Collision Avoidance System ([OpenCAS](https://github.com/aeronautical-informatics/opencas)) and a Terrain Awareness and Warning System ([OpenTAWS](https://github.com/aeronautical-informatics/opentaws)) executed within a partitioned environment within the XNG hypervisor, simulating the functionality of an avionic computer.Thanks to this project, I was able to hone my skills in `C` and `Rust` as well as learn how aviation-grade hypervisors operate. On a more meta level, I got to experience the role as a high- and low-level system engineer, both designing high-level architectures (from its requirements to its structure) as well as its low-level implementation on the hardware."
-  
   - title: "ADMIRE"
     technologies:
       - "C"
@@ -24,8 +12,21 @@ projects:
       - "Vivado/Vitis Tooling"
     timeline: "01/2024 - 12/2026"
     content:
-      - "The Weather Dashboard is a web application that provides real-time weather updates for any location. It utilizes the [OpenWeather API](https://openweathermap.org/api) to fetch current weather data, including temperature, humidity, and wind speed. Built with [React](https://reactjs.org/), the application features a responsive design and allows users to search for cities and view detailed weather forecasts."
+      - "ADMIRE - *Advancing Miniaturized Radar* - is an DLR internal project, maturing radar systems particularly for space applications. Within the scope of ADMIRE, one goal is to mature on-satellite signal processing in order to preserve bandwidth on the downlink. Here, the intention is to use FPGA based accelerators, which efficiently process radar signal. My role in ADMIRE is to develop a hypervisor concept which can manage hardware accelerators as well as handle all software tasks. In the wake of this, I am developing a "hardware hypervisor", designing the interface between a classically software based one and the hardware accelerators. Focus is laid on performance and safety ."
   
+  - title: "XANDAR"
+    technologies:
+      - "SysML"
+      - "C"
+      - "Rust"
+      - "XNG Hypervisor"
+      - "Makefile"
+    website: "https://xandar-project.eu/"
+    timeline: "01/2021 - 12/2023"
+    content:
+      - "XANDAR (_X-by-Construction Design framework for Engineering Autonomous & Distributed Real-time Embedded Software Systems_) is an EU project comprised by industry and academic partners within the automotive, aviation and software tooling domains. The project delivered a mature software toolchain, enabling fast and robust prototyping from capturing requirements to systems modelling all the way up to code generation and Verification and Validation (V&V) on the target hardware platform. By integrating advanced safety patterns, runtime monitoring and modern code generation into the toolchain, multiple attributes (safety, security, reliability, etc.) are fulfilled, realizing the X-by-Construction paradigm. Particular focus is laid on non-deterministic AI/ML artifacts, which are primarily used for autonomy functions within the automotive and aviation domain."
+      - "Within the project, my role was to develop an avionic demonstrator to further mature and test the toolchain. The demonstrator contains an instance of an ADS-B based Collision Avoidance System ([OpenCAS](https://github.com/aeronautical-informatics/opencas)) and a Terrain Awareness and Warning System ([OpenTAWS](https://github.com/aeronautical-informatics/opentaws)) executed within a partitioned environment within the XNG hypervisor, simulating the functionality of an avionic computer.Thanks to this project, I was able to hone my skills in `C` and `Rust` as well as learn how aviation-grade hypervisors operate. On a more meta level, I got to experience the role as a high- and low-level system engineer, both designing high-level architectures (from its requirements to its structure) as well as its low-level implementation on the hardware."
+
   - title: "Energy Storage System of SeeSat Satellite"
     technologies:
       - "Electronic Design"
@@ -33,6 +34,14 @@ projects:
     timeline: "06/2021 - 03/2022" 
     content: 
       - "Within a student research program, I got to develop the Energy Storage System concept and most parts of its electronic design for a cubesat satellite: SeeSat. Sadly, due to the aftermath of the COVID pandemic, it was not possible to actually produce the results. However, especially the power management systems have been matured a lot and are in use in other student cubesat programs **(need to put prove here)**"
+  
+  - title: "Student Project - Building a bicycle computer"
+    technologies:
+      - "C"
+    timeline: "Semester in 2021"
+    content:
+      - "This project was a part of my undergrad education and has been literally the first embedded coding project, which I have ever done! Basically nothing special, just playing with an Arduino and writing all the code from scratch to interface with hall sensors, gyroscopes and accelerometers, as well as displays and rudimentary I/O for that. The result worked out *good enough* for the purposes."
+      - "Since then, with all the various experiences and skills later, it is back on my hobby table to redo it. This time in bare-metal Rust, with custom circuit boards and custom designed processor IC. This might be the holy grail of over-engineering but I am certain that it will help me learn a lot about all the different aspects within this build."
 
 
 hobbies:

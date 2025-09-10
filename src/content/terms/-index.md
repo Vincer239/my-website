@@ -4,9 +4,9 @@ title: Terms & Conditions
 
 ## Copyright
 
-&copy; 2025 Jane Doe. All rights reserved.
+&copy; 2025 Vincent Janson. All rights reserved.
 
-## Reuse
+<!-- ## Reuse
 
 ### Source Code
 
@@ -32,15 +32,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
+ ``` -->
 
 ### Content
 
-It is not permitted to mirror or re-publish the content of this website. That includes, for example, the words and images displayed on it. Write your own blog.
+It is not permitted to mirror or re-publish the content of this website. That includes, for example, the words and images displayed on it.
 
 ## Terms
 
-1. This site includes matters of opinion and speculation. All material is provided for informational purposes only.
+1. All material is provided for informational purposes only.
 2. While I try to keep materials up-to-date and accurate, the currency, accuracy, and completeness of my work can not be guaranteed.
 3. You are responsible for whatever happens as a result of you reading or using materials from this site.
 4. These terms and conditions may be amended at any time in the future.
