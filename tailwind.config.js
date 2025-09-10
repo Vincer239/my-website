@@ -169,6 +169,10 @@ module.exports = {
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
+    require("daisyui")({
+    // prefix: "daisy-" sorgt dafür, dass alle Klassen daisy-btn, daisy-card etc. heißen
+    prefix: 'daisy-',
+    }),
     require("tailwind-bootstrap-grid")({
       generateContainer: false,
       gridGutterWidth: "2rem",

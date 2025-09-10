@@ -36,11 +36,52 @@ const about = defineCollection({
 
 const vita = defineCollection({
   loader: glob({ pattern: "-index.{md,mdx}", base: "./src/content/vita" }),
-  schema: ({ image }) =>
-    searchable.extend({
-      image: image().optional(),
-      imageAlt: z.string().default(""),
-    }),
+  schema: z.object({
+    experiences: z
+      .array(
+        z.object({
+          company:     z.string(),
+          time:        z.string(),
+          title:       z.string(),
+          location:    z.string(),
+          description: z.string(),
+        })
+      )
+      .optional(),
+    education: z
+      .array(
+        z.object({
+          school:      z.string(),
+          time:        z.string(),
+          degree:      z.string(),
+          location:    z.string(),
+          description: z.string(),
+        })
+      )
+      .optional(),
+    skills: z
+      .array(
+        z.object({
+          title:       z.string(),
+          description: z.string(),
+        })
+      )
+      .optional(),
+    publications: z
+      .array(
+        z.object({
+          title:      z.string(),
+          authors:    z.string(),
+          journal:    z.string(),
+          time:       z.string(),
+          link:       z.string().optional(),
+          abstract:   z.string(),
+        })
+      )
+      .optional(),
+      title: z.string(),
+      description: z.string(),
+  }),
 });
 
 const blog = defineCollection({
@@ -66,12 +107,12 @@ const home = defineCollection({
       imageAlt: z.string().default(""),
       title: z.string(),
       content: z.string(),
-      button: z
-        .object({
+      button: z.array(
+        z.object({
           label: z.string(),
           link: z.string().optional(),
         })
-        .optional(),
+      ).optional(),
     }),
 });
 
