@@ -6,13 +6,13 @@ import type { CollectionKey } from "astro:content";
 
 const searchableCollections = [
   "about",
-  "authors",
   "blog",
-  "docs",
-  "poetry",
   "portfolio",
-  "recipes",
   "terms",
+  // "authors",
+  // "poetry",
+  // "docs",
+  // "recipes",
 ] as CollectionKey[];
 
 const searchList = (await getEntriesBatch(

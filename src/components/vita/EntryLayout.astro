@@ -2,24 +2,28 @@
 import BaseLayout from "@components/base/BaseLayout.astro";
 import { markdownify } from "@lib/textConverter";
 import { Image } from "astro:assets";
-import type { AboutEntry } from "@/types";
+import type { VitaEntry } from "@/types";
 import { render } from "astro:content";
+import CvTimeline from '@/components/vita/CvTimeline.astro'
+import List from '@/components/vita/List.astro'
+import PublicationsList from '@/components/vita/PublicationsList.astro'
 
 interface Props {
-  entry: AboutEntry;
+  entry: VitaEntry;
 }
 
+
 const { entry } = Astro.props;
-const { title, description, image, imageAlt } = entry.data;
+const { title, description, experiences, education, skills, publications } = entry.data;
+// const { title, description, image, imageAlt } = entry.data;
 const { Content } = await render(entry);
 ---
 
-<BaseLayout title={title} description={description} image={image?.src}>
-  <section class="section-sm">
-    <div class="container">
+<BaseLayout title={title} description={description}>
+  <section class="section-sm container">
       <div class="row justify-center">
-        <div class="glass rounded-lg text-center p-8 md:col-10 lg:col-7 intersect:animate-fadeUp opacity-0 intersect-no-queue">
-          {
+        <div class="glass rounded-lg text-center p-8 md:col-10  intersect:animate-fadeUp opacity-0 intersect-no-queue">
+          <!-- {
             image && (
               <Image
                 class="mx-auto mb-6 rounded-lg w-64"
@@ -30,11 +34,39 @@ const { Content } = await render(entry);
                 loading="eager"
               />
             )
-          }
-          <h2 set:html={markdownify(title)} class="h3 mb-6" />
-            <Content />
+          } -->
+
+          {education.length > 0 && (
+            <section class="mb-12">
+              <h2 class="text-2xl font-bold mb-6 border-b pb-2">Education</h2>
+              <CvTimeline elements={education} colored />
+            </section>
+          )}
+
+          {experiences.length > 0 && (
+            <section class="mb-12">
+              <h2 class="text-2xl font-bold mb-6 border-b pb-2">Experiences</h2>
+              <CvTimeline elements={experiences} colored />
+            </section>
+          )}
+
+          {publications.length > 0 && (
+            <section class="mb-12">
+              <h2 class="text-2xl font-bold mb-6 border-b pb-2">Last Publications</h2>
+              <PublicationsList elements={publications} />
+            </section>
+          )}
+
+          {skills.length > 0 && (
+            <section class="mb-12">
+              <List listTitle="Skills" listItems={skills} />
+            </section>
+          )}
+          <!-- <h2 set:html={markdownify(title)} class="h3 mb-6" />
+            <Content /> -->
         </div>
-      </div>
     </div>
   </section>
 </BaseLayout>
+
+
