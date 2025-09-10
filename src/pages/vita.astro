@@ -1,0 +1,9 @@
+---
+import type { VitaEntry } from "@/types";
+import EntryLayout from "@components/vita/EntryLayout.astro";
+import { getIndex } from "@lib/contentParser";
+
+const entry = (await getIndex("vita")) as VitaEntry;
+---
+
+<EntryLayout entry={entry} />
