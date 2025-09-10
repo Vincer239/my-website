@@ -12,7 +12,7 @@ projects:
       - "Vivado/Vitis Tooling"
     timeline: "01/2024 - 12/2026"
     content:
-      - "ADMIRE - *Advancing Miniaturized Radar* - is an DLR internal project, maturing radar systems particularly for space applications. Within the scope of ADMIRE, one goal is to mature on-satellite signal processing in order to preserve bandwidth on the downlink. Here, the intention is to use FPGA based accelerators, which efficiently process radar signal. My role in ADMIRE is to develop a hypervisor concept which can manage hardware accelerators as well as handle all software tasks. In the wake of this, I am developing a "hardware hypervisor", designing the interface between a classically software based one and the hardware accelerators. Focus is laid on performance and safety ."
+      - "ADMIRE - *Advancing Miniaturized Radar* - is an DLR internal project, maturing radar systems particularly for space applications. Within the scope of ADMIRE, one goal is to mature on-satellite signal processing in order to preserve bandwidth on the downlink. Here, the intention is to use FPGA based accelerators, which efficiently process radar signal. My role in ADMIRE is to develop a hypervisor concept which can manage hardware accelerators as well as handle all software tasks. In the wake of this, I am developing a *'hardware hypervisor'*, designing the interface between a classically software based one and the hardware accelerators. Focus is laid on performance and safety."
   
   - title: "XANDAR"
     technologies:
