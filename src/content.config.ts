@@ -149,19 +149,19 @@ const terms = defineCollection({
 });
 
 /* remove authors as not currently used */
-const authors = defineCollection({
-  loader: glob({
-    pattern: "**\/[^_]*.{md,mdx}",
-    base: "./src/content/authors",
-  }),
-  schema: ({ image }) =>
-    searchable.extend({
-      email: z.string().optional(),
-      image: image().optional(),
-      imageAlt: z.string().default(""),
-      social: social.optional(),
-    }),
-});
+// const authors = defineCollection({
+//   loader: glob({
+//     pattern: "**\/[^_]*.{md,mdx}",
+//     base: "./src/content/authors",
+//   }),
+//   schema: ({ image }) =>
+//     searchable.extend({
+//       email: z.string().optional(),
+//       image: image().optional(),
+//       imageAlt: z.string().default(""),
+//       social: social.optional(),
+//     }),
+// });
 
 /* remove docs as not currently used */
 // const docs = defineCollection({
@@ -231,12 +231,12 @@ const authors = defineCollection({
 // Export collections
 export const collections = {
   about,
-  authors,
   blog,
   home,
   portfolio,
   terms,
   vita,
+  // authors,
   // docs,
   // indexCards,
   // poetry,
