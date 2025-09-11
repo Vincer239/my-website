@@ -1,13 +1,13 @@
 ---
 image: "@assets/profile/vinc_home.webp"
-imageAlt: Astrogon logo
+imageAlt: illuminati :)
 title: Welcome
 content: Feel free to look around and explore my world :)
 button:
   - label: This is me
-    link: /about
+    link: /my-website/about
   - label: My projects
-    link: /portfolio  
+    link: /my-website/portfolio  
   - label: My Vita
-    link: /vita
+    link: /my-website/vita
 ---
