@@ -13,12 +13,12 @@ import cloudflare from "@astrojs/cloudflare";
 // https://astro.build/config
 export default defineConfig({
   site: "https://vincer239.github.io",
-  base: "/my-website",
+  base: "/my-website/",
   trailingSlash: "ignore",
   prefetch: {
     prefetchAll: true
   },
-  adapter: cloudflare(),
+  // adapter: cloudflare(),
   integrations: [react(), sitemap(), tailwind({
     config: {
       applyBaseStyles: false
