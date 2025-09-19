@@ -29,7 +29,7 @@ const { title, description, projects, hobbies } = entry.data;
                     <p class="italic">{project.timeline}</p>
                   )}
                 </div>
-                <div class="-mt-4 flex items-center">
+                <div class="-mt-4 flex flex-wrap items-center gap-2">
                   {project.github && (
                     <a
                       aria-label="Github"
@@ -56,7 +56,7 @@ const { title, description, projects, hobbies } = entry.data;
                     <li class="list-none">
                       {/* Use markdownify to convert markdown to HTML for each technology */}
                       <div
-                        class="mr-2 px-2 h-8 flex glass-t shadow-none rounded text-txt-p dark:text-darkmode-txt-p items-center justify-center text-center"
+                        class="px-3 py-1 flex glass-t shadow-none rounded text-txt-p dark:text-darkmode-txt-p items-center justify-center text-center whitespace-normal break-words max-w-full"
                         set:html={markdownify(element)}
                       />
                     </li>
@@ -106,7 +106,7 @@ const { title, description, projects, hobbies } = entry.data;
                   <p set:html={markdownify(element)} />
                 ))}
               </div>
-            // </>
+            </>
           ))
         }
       </div>
